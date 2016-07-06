@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CF507ABB1D2BA34000E01ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507ABA1D2BA34000E01ECD /* AppDelegate.swift */; };
-		CF507ABD1D2BA34000E01ECD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507ABC1D2BA34000E01ECD /* ViewController.swift */; };
+		CF507ABD1D2BA34000E01ECD /* GeniusesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507ABC1D2BA34000E01ECD /* GeniusesTableViewController.swift */; };
 		CF507AC01D2BA34000E01ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF507ABE1D2BA34000E01ECD /* Main.storyboard */; };
 		CF507AC21D2BA34000E01ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF507AC11D2BA34000E01ECD /* Assets.xcassets */; };
 		CF507AC51D2BA34000E01ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF507AC31D2BA34000E01ECD /* LaunchScreen.storyboard */; };
-		CF507AD01D2BA34000E01ECD /* VCTDDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507ACF1D2BA34000E01ECD /* VCTDDTests.swift */; };
+		CF507AE51D2C0B6D00E01ECD /* GeniusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		CF507AB71D2BA34000E01ECD /* VCTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF507ABA1D2BA34000E01ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CF507ABC1D2BA34000E01ECD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF507ABC1D2BA34000E01ECD /* GeniusesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewController.swift; sourceTree = "<group>"; };
 		CF507ABF1D2BA34000E01ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF507AC11D2BA34000E01ECD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF507AC41D2BA34000E01ECD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF507AC61D2BA34000E01ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF507ACB1D2BA34000E01ECD /* VCTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF507ACF1D2BA34000E01ECD /* VCTDDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCTDDTests.swift; sourceTree = "<group>"; };
 		CF507AD11D2BA34000E01ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,11 @@
 		CF507AB91D2BA34000E01ECD /* VCTDD */ = {
 			isa = PBXGroup;
 			children = (
-				CF507ABA1D2BA34000E01ECD /* AppDelegate.swift */,
-				CF507ABC1D2BA34000E01ECD /* ViewController.swift */,
-				CF507ABE1D2BA34000E01ECD /* Main.storyboard */,
-				CF507AC11D2BA34000E01ECD /* Assets.xcassets */,
-				CF507AC31D2BA34000E01ECD /* LaunchScreen.storyboard */,
-				CF507AC61D2BA34000E01ECD /* Info.plist */,
+				CF507ADA1D2BA35C00E01ECD /* AppDelegate */,
+				CF507ADB1D2BA38900E01ECD /* Views */,
+				CF507AE11D2C0A8400E01ECD /* Presenters */,
+				CF507AE21D2C0A9300E01ECD /* Model */,
+				CF507ADC1D2BA3A000E01ECD /* SupportFiles */,
 			);
 			path = VCTDD;
 			sourceTree = "<group>";
@@ -90,10 +89,91 @@
 		CF507ACE1D2BA34000E01ECD /* VCTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				CF507ACF1D2BA34000E01ECD /* VCTDDTests.swift */,
-				CF507AD11D2BA34000E01ECD /* Info.plist */,
+				CF507ADE1D2C0A5400E01ECD /* AppDelegate */,
+				CF507ADF1D2C0A6000E01ECD /* Views */,
+				CF507AE01D2C0A7400E01ECD /* Presenters */,
+				CF507AE31D2C0AA400E01ECD /* Model */,
+				CF507ADD1D2C0A4400E01ECD /* SupportFiles */,
 			);
 			path = VCTDDTests;
+			sourceTree = "<group>";
+		};
+		CF507ADA1D2BA35C00E01ECD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CF507ABA1D2BA34000E01ECD /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CF507ADB1D2BA38900E01ECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CF507ABC1D2BA34000E01ECD /* GeniusesTableViewController.swift */,
+				CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */,
+				CF507ABE1D2BA34000E01ECD /* Main.storyboard */,
+				CF507AC31D2BA34000E01ECD /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF507ADC1D2BA3A000E01ECD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF507AC11D2BA34000E01ECD /* Assets.xcassets */,
+				CF507AC61D2BA34000E01ECD /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CF507ADD1D2C0A4400E01ECD /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CF507AD11D2BA34000E01ECD /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		CF507ADE1D2C0A5400E01ECD /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CF507ADF1D2C0A6000E01ECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CF507AE01D2C0A7400E01ECD /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CF507AE11D2C0A8400E01ECD /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		CF507AE21D2C0A9300E01ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CF507AE31D2C0AA400E01ECD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +277,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF507ABD1D2BA34000E01ECD /* ViewController.swift in Sources */,
+				CF507AE51D2C0B6D00E01ECD /* GeniusTableViewCell.swift in Sources */,
+				CF507ABD1D2BA34000E01ECD /* GeniusesTableViewController.swift in Sources */,
 				CF507ABB1D2BA34000E01ECD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF507AD01D2BA34000E01ECD /* VCTDDTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
