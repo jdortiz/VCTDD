@@ -13,6 +13,7 @@
 		CF507AC21D2BA34000E01ECD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF507AC11D2BA34000E01ECD /* Assets.xcassets */; };
 		CF507AC51D2BA34000E01ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF507AC31D2BA34000E01ECD /* LaunchScreen.storyboard */; };
 		CF507AE51D2C0B6D00E01ECD /* GeniusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */; };
+		CF507AE81D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507AE71D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		CF507ACB1D2BA34000E01ECD /* VCTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VCTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF507AD11D2BA34000E01ECD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusTableViewCell.swift; sourceTree = "<group>"; };
+		CF507AE61D2D558D00E01ECD /* VCTDDTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCTDDTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF507AE71D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 		CF507ADF1D2C0A6000E01ECD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CF507AE71D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift */,
+				CF507AE61D2D558D00E01ECD /* VCTDDTests-Bridging-Header.h */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF507AE81D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,10 +435,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VCTDDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canonicalexamples.VCTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VCTDDTests/VCTDDTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCTDD.app/VCTDD";
 			};
 			name = Debug;
@@ -441,10 +450,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VCTDDTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canonicalexamples.VCTDDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VCTDDTests/VCTDDTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VCTDD.app/VCTDD";
 			};
 			name = Release;

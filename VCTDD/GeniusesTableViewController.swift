@@ -11,6 +11,7 @@ import UIKit
 
 
 class GeniusesTableViewController: UITableViewController {
+    static let ID = "GeniusesTableViewControllerID"
 
     override func viewDidLoad() {
         super.viewDidLoad()
