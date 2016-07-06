@@ -12,10 +12,12 @@ import UIKit
 
 class GeniusesTableViewController: UITableViewController {
     static let ID = "GeniusesTableViewControllerID"
+    var presenter: GeniusesListPresenter?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpForDynamicHeightCells()
+        presenter?.viewCreated()
     }
     
     func setUpForDynamicHeightCells() {

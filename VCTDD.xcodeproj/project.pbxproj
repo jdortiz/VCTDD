@@ -14,6 +14,7 @@
 		CF507AC51D2BA34000E01ECD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF507AC31D2BA34000E01ECD /* LaunchScreen.storyboard */; };
 		CF507AE51D2C0B6D00E01ECD /* GeniusTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */; };
 		CF507AE81D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507AE71D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift */; };
+		CF507AEA1D2D72AF00E01ECD /* GeniusesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507AE91D2D72AF00E01ECD /* GeniusesListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		CF507AE41D2C0B6D00E01ECD /* GeniusTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusTableViewCell.swift; sourceTree = "<group>"; };
 		CF507AE61D2D558D00E01ECD /* VCTDDTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VCTDDTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		CF507AE71D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewControllerTests.swift; sourceTree = "<group>"; };
+		CF507AE91D2D72AF00E01ECD /* GeniusesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusesListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		CF507AE11D2C0A8400E01ECD /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				CF507AE91D2D72AF00E01ECD /* GeniusesListPresenter.swift */,
 			);
 			name = Presenters;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF507AE51D2C0B6D00E01ECD /* GeniusTableViewCell.swift in Sources */,
+				CF507AEA1D2D72AF00E01ECD /* GeniusesListPresenter.swift in Sources */,
 				CF507ABD1D2BA34000E01ECD /* GeniusesTableViewController.swift in Sources */,
 				CF507ABB1D2BA34000E01ECD /* AppDelegate.swift in Sources */,
 			);
@@ -479,6 +483,7 @@
 				CF507AD61D2BA34000E01ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF507AD71D2BA34000E01ECD /* Build configuration list for PBXNativeTarget "VCTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				CF507AD91D2BA34000E01ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
