@@ -53,6 +53,21 @@ class GeniusesTableViewControllerTests: XCTestCase {
         XCTAssertNotNil(sut, "Sut must not be nil.")
     }
 
+    
+    func testTableRowHeightIsAutomatic() {
+        _ = sut.view
+
+        XCTAssertEqual(sut.tableView.rowHeight, UITableViewAutomaticDimension)
+    }
+
+    
+    func testTableEstimatedRowHeightIsSet() {
+        _ = sut.view
+        
+        XCTAssertTrue(sut.tableView.estimatedRowHeight > 0.0)
+    }
+    
+
 
     // MARK: - Stubs & Mocks.
 
