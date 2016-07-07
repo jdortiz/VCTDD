@@ -16,6 +16,8 @@ class GeniusesTableViewControllerTests: XCTestCase {
     // MARK: - Parameters & Constants.
 
     let storyboardName = "Main"
+    let numberOfGeniusesOne = 7
+    let numberOfGeniusesAnother = 3
 
 
     // MARK: - Test vatiables.
@@ -83,14 +85,47 @@ class GeniusesTableViewControllerTests: XCTestCase {
     }
     
 
+    func testPresenterProvidesOneNumberOfRowsInSection() {
+        presenter.totalGeniuses = numberOfGeniusesOne
+        sut.presenter = presenter
+        
+        let rows = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
+        
+        XCTAssertEqual(rows, numberOfGeniusesOne)
+    }
+
+
+    func testPresenterProvidesAnotherNumberOfRowsInSection() {
+        presenter.totalGeniuses = numberOfGeniusesAnother
+        sut.presenter = presenter
+        
+        let rows = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
+        
+        XCTAssertEqual(rows, numberOfGeniusesAnother)
+    }
+
+    
+    func testNumberOfRowsInSectionIsZeroIfPresenterIsNotSet() {
+        sut.presenter = nil
+        
+        let rows = sut.tableView(sut.tableView, numberOfRowsInSection: 0)
+        
+        XCTAssertEqual(rows, 0)
+    }
+
     
     // MARK: - Stubs & Mocks.
 
     class GeniusesListPresenterMock: GeniusesListPresenter {
         var isViewCreatedInvoked = false
-        
+        var totalGeniuses: Int?
+
         override func viewCreated() {
             isViewCreatedInvoked = true
+        }
+
+        override func numberOfGeniuses() -> Int {
+            return totalGeniuses ?? 0
         }
     }
 }

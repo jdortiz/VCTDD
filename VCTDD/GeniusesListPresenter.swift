@@ -15,4 +15,7 @@ class GeniusesListPresenter {
     func viewCreated() {
     }
 
+    func numberOfGeniuses() -> Int {
+        return 0
+    }
 }
