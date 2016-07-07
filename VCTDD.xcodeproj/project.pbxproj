@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CF3CF1F41D2E97D000756CE5 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CF1F31D2E97D000756CE5 /* AppDelegateTests.swift */; };
+		CF3CF1F61D2E9A2500756CE5 /* GeniusTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3CF1F51D2E9A2500756CE5 /* GeniusTableViewCellTests.swift */; };
 		CF507ABB1D2BA34000E01ECD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507ABA1D2BA34000E01ECD /* AppDelegate.swift */; };
 		CF507ABD1D2BA34000E01ECD /* GeniusesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF507ABC1D2BA34000E01ECD /* GeniusesTableViewController.swift */; };
 		CF507AC01D2BA34000E01ECD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF507ABE1D2BA34000E01ECD /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		CF3CF1F31D2E97D000756CE5 /* AppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		CF3CF1F51D2E9A2500756CE5 /* GeniusTableViewCellTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeniusTableViewCellTests.swift; sourceTree = "<group>"; };
 		CF507AB71D2BA34000E01ECD /* VCTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VCTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF507ABA1D2BA34000E01ECD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF507ABC1D2BA34000E01ECD /* GeniusesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeniusesTableViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		CF507ADD1D2C0A4400E01ECD /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				CF507AE61D2D558D00E01ECD /* VCTDDTests-Bridging-Header.h */,
 				CF507AD11D2BA34000E01ECD /* Info.plist */,
 			);
 			name = SupportFiles;
@@ -153,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				CF507AE71D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift */,
-				CF507AE61D2D558D00E01ECD /* VCTDDTests-Bridging-Header.h */,
+				CF3CF1F51D2E9A2500756CE5 /* GeniusTableViewCellTests.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				CF3CF1F41D2E97D000756CE5 /* AppDelegateTests.swift in Sources */,
 				CF507AE81D2D558E00E01ECD /* GeniusesTableViewControllerTests.swift in Sources */,
+				CF3CF1F61D2E9A2500756CE5 /* GeniusTableViewCellTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
