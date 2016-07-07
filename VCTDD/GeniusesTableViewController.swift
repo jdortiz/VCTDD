@@ -25,5 +25,13 @@ class GeniusesTableViewController: UITableViewController {
         self.tableView.estimatedRowHeight = 56.0
     }
 
+    override func tableView(tableView: UITableView, numberOfRowsInSection: Int) -> Int {
+        return 7
+    }
+
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("GeniusTableViewCellID", forIndexPath: indexPath)
+        return cell
+    }
 }
 
