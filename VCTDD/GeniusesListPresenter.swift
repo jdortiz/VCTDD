@@ -18,4 +18,9 @@ class GeniusesListPresenter {
     func numberOfGeniuses() -> Int {
         return 0
     }
+
+    func configure(cell cell: GeniusTableViewCell, forRow row: Int) {
+        
+    }
+
 }

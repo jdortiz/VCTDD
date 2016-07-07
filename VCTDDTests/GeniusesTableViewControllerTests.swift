@@ -113,12 +113,23 @@ class GeniusesTableViewControllerTests: XCTestCase {
         XCTAssertEqual(rows, 0)
     }
 
+
+    func testPresenterConfiguresCellView() {
+        sut.presenter = presenter
+        presenter.totalGeniuses = 1
+
+        sut.tableView(sut.tableView, cellForRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0))
+
+        XCTAssertTrue(presenter.isConfigureCellInvoked)
+    }
     
+
     // MARK: - Stubs & Mocks.
 
     class GeniusesListPresenterMock: GeniusesListPresenter {
-        var isViewCreatedInvoked = false
         var totalGeniuses: Int?
+        var isViewCreatedInvoked = false
+        var isConfigureCellInvoked = false
 
         override func viewCreated() {
             isViewCreatedInvoked = true
@@ -126,6 +137,10 @@ class GeniusesTableViewControllerTests: XCTestCase {
 
         override func numberOfGeniuses() -> Int {
             return totalGeniuses ?? 0
+        }
+
+        override func configure(cell cell: GeniusTableViewCell, forRow row: Int) {
+            isConfigureCellInvoked = true
         }
     }
 }
